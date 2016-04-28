@@ -1,5 +1,6 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
-// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
 
 using System;
 using System.Collections.Generic;
@@ -65,8 +66,7 @@ class C {
     }
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
     private int _field;
@@ -122,8 +122,7 @@ class C {
     }
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
     private int field;
@@ -150,8 +149,7 @@ class C {
     }
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
     private int _field;
@@ -176,8 +174,7 @@ class C
 #endif 
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
 #if DOG
@@ -200,8 +197,7 @@ internal class C
 #endif 
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
 #if DOG
@@ -231,8 +227,7 @@ class C
 #endif 
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
     private void G()
@@ -269,8 +264,7 @@ class C
 #endif 
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
 #if TEST
@@ -309,8 +303,7 @@ internal class C
     }
 }";
 
-            var expected = @"// header
-
+            var expected = @"
 internal class C
 {
     private void M()
@@ -347,8 +340,7 @@ namespace Microsoft.Build.UnitTests
        {}
     }
 }";
-            var expected = @"// header
-
+            var expected = @"
 using System;
 using System.Reflection;
 
